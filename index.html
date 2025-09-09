@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forex Demo Deposit Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    .card { max-width: 400px; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; }
+    select, button { width: 100%; padding: 0.5rem; margin-top: 0.5rem; }
+    .address { margin-top: 1rem; font-family: monospace; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Deposit Crypto</h2>
+    <label for="crypto">Choose Cryptocurrency:</label>
+    <select id="crypto">
+      <option value="BTC">Bitcoin (Testnet)</option>
+      <option value="ETH">Ethereum (Testnet)</option>
+    </select>
+    <button onclick="generateAddress()">Generate Address</button>
+    <div class="address" id="address"></div>
+  </div>
+
+  <script>
+    function generateAddress() {
+      const crypto = document.getElementById("crypto").value;
+      let addr = "";
+      if (crypto === "BTC") {
+        addr = "tb1q-example-bitcoin-testnet";
+      } else if (crypto === "ETH") {
+        addr = "0xExampleEthereumSepoliaTestnet";
+      }
+      document.getElementById("address").innerText = addr;
+    }
+  </script>
+</body>
+</html>
