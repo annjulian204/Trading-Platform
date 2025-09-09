@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forex Demo Deposit Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Deposit Crypto</h2>
+    <label for="crypto">Choose Cryptocurrency:</label>
+    <select id="crypto">
+      <option value="BTC">Bitcoin (Testnet)</option>
+      <option value="ETH">Ethereum (Testnet)</option>
+    </select>
+    <button onclick="generateAddress()">Generate Address</button>
+    <div class="address" id="address"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
