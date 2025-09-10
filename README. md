@@ -9,11 +9,18 @@ This project is a simple **crypto trading platform** with:
 ---
 
 ## 📂 Project Structure
+
 ---
 
 ## 🚀 Setup
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/annjulian204/Trading-Platform.git
+cd Trading-Platform
+```
+### 2. Backend setup
+```bash
+cd backend
+npm install
+```
